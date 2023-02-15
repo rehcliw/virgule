@@ -1,2 +1,2 @@
 # virgule
-repo for [virgule](https://rehcliw.github.io/virgule/)
+repo for <a href="https://rehcliw.github.io/virgule/" target="blank">virgule</a>
