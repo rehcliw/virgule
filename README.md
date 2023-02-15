@@ -1,2 +1,2 @@
 # virgule
-repo for [virgule](rehcliw.github.io/virgule)
+repo for [virgule](https://rehcliw.github.io/virgule/)
