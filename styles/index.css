@@ -1,11 +1,21 @@
-.header {
-    font-family: Montserrat;
+.title {
+    font-family: BIZ UDPGothic;
     font-weight: bold;
     font-size: 30px;
-    margin-top: 0;
-    margin-left: 8px;
-    font-stretch: ultra-expanded;
+    line-height: 35px;
     color: black;
     text-decoration: none;
     display: block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.header {
+    width: 130px;
+    background-color: rgb(235, 158, 158);
+    margin-bottom: 5px;
+}
+body {
+    background-color: rgb(238, 198, 198);
+    margin-left: 15px;
+    font-family: BIZ UDPGothic;
 }
