@@ -6,34 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hydra</title>
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/hydra.css">
     <link rel="preconnect" 
     href="https://fonts.googleapis.com">
     <link rel="preconnect" 
     href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Montserrat:wght@400;500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- import the latest version of hydra synth-->
+    <!--import the latest version of hydra synth-->
     <script src="https://unpkg.com/hydra-synth"></script>
-</head>
+    <!--wait til body is loaded-->
+    <script src="scripts/hydra-0.js" defer></script>
+  </head>
 <body>
-    <div class="header">
-      <a class="title" href="index.html">
-          may wilcher
-      </a>
-      <marquee class="welcome-msg">🚋hydra work🚋</marquee>
-    </div>
-    <canvas id="myCanvas" width="400px" height="400px"></canvas>
-    <script>
-        // create a new hydra-synth instance
-        var hydra = new Hydra({
-          canvas: document.getElementById("myCanvas"),
-          detectAudio: false,
-          enableStreamCapture: false,
-        })
-        osc(7, 0, 0.5).rotate(0, 0.1).kaleid(4).color(1, 0)
-        .modulateRotate(shape(4,0.9,2.9).mult(o0).mask(noise(1,0),1)
-        .repeat(2,2),1.9)
-        .out(o0)
-    </script>
+    
+
+    <canvas id="myCanvas"></canvas>
+    
+    <main>
+      <div class="header">
+        <a class="title" href="index.html">
+            may wilcher
+        </a>
+        <marquee class="welcome-msg">🚋hydra work🚋</marquee>
+      </div>
+      <button onclick="r=1;g=0;b=1">
+        color 1
+      </button>
+      <button onclick="r=1;g=1;b=0">
+        color 2
+      </button>
+      <div class="slider-section">
+        <input type="range" value="1.9" id="mod" name="mod"
+               min="0" max="4" step="0.01" oninput="mod=this.value">
+        <label for="mod">mod</label>
+      </div>
+    </main>    
+    
 </body>
 </html>
