@@ -27,6 +27,9 @@
     width: 130px;
     background: #a45250;
     margin-bottom: 5px;
+    border-color: #011a1a;
+    border-style: solid;
+    border-width: 2px;
 }
 body {
     background: #393934;
